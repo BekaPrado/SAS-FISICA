@@ -1,0 +1,299 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    scroll-behavior: smooth;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-color: #fefefe;
+    position: fixed;
+    width: 100vw;
+    height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.logo img {
+    height: 180px;
+    margin-left: -20px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+header nav a {
+    font-weight: bold;
+    color: #211b15;
+    padding: 10px 20px;
+    transition: background-color 1s, color 0.3s;
+    margin-right: 20px;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+header nav a:hover {
+    color: white;
+    background-color: #E9DEF2;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding-top: 150px; 
+}
+
+.retangulo {
+    background-color: #E9DEF2;
+    color: white;
+    width: 100%;
+    max-width: 1800px;
+    padding: 30px;
+    border-radius: 80px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.retangulo h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.retangulo p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.text-box {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px; 
+}
+
+
+.text-box-um {
+    background-color: #f046d01e;
+    width: 1000px;
+}
+.text-box-um h2{
+    color: purple;
+}
+.text-box-um img{
+    width: 130px;
+}
+.text-box-um p{
+    color: rgb(255, 255, 255);
+}
+/*__________________*/
+.text-box-dois {
+    background-color: #f046d01e;
+    width: 900px;
+    margin-left: 800px;
+}
+.text-box-dois h2{
+    color: purple;
+}
+.text-box-dois p{
+    color: rgb(254, 254, 254);
+}
+
+/*_______________*/
+.text-box-tres {
+    background-color:  #f046d01e;
+    width: 900px;
+    
+}
+.text-box-tres h2{
+    color: purple;
+}
+.text-box-tres p{
+    color: white;
+}
+.text-box-tres img{
+    width: 130px;
+}
+/*_________________*/
+.text-box-quatro {
+    background-color: #f046d01e;
+    width: 900px;
+    margin-left: 800px;
+}
+.text-box-quatro h2{
+    color: purple;
+}
+.text-box-quatro{
+    color: white;
+}
+.text-box-quatro img{
+    width: 130px;
+}
+/*__________*/
+.text-box-cinco {
+    background-color:  #f046d01e;
+    width: 900px;
+}
+.text-box-cinco h2{
+    color: purple;
+}
+.text-box-cinco p{
+    color: white;
+}
+.text-box-cinco img{
+    width: 130px;
+}
+/*__________*/
+.text-box-seis {
+    background-color: #f046d01e;
+    width: 900px;
+    margin-left: 800px;
+}
+.text-box-seis h2{
+    color: purple;
+}
+.text-box-seis p{
+    color: white;
+}
+.text-box-seis img{
+    width: 130px;
+}
+/*__________*/
+.text-box-sete {
+    background-color:  #f046d01e;
+    width: 900px;
+}
+.text-box-sete h2{
+    color: purple;
+}
+.text-box-sete p{
+    color: white;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+/* celular */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #logo {
+        margin-top: 30px;
+        width: 50px; 
+        margin-right: 300px;
+    }
+
+    header nav li {
+        display: none; 
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav a {
+        padding: 8px 12px;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .retangulo {
+        padding: 20px;
+    }
+
+    .text-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .text-box img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        height: auto;
+    }
+
+    .logo img {
+        height: 140px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+    }
+
+    .retangulo {
+        padding: 25px;
+    }
+
+    .text-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-box img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+/* desktop maior*/
+@media (min-width: 1025px) {
+    
+
+    .retangulo {
+        padding: 30px 50px;
+    }
+
+    .logo img {
+        height: 180px;
+    }
+    
+}
