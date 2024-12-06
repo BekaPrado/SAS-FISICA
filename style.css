@@ -44,7 +44,6 @@ header nav a{
 header nav a:last-child{
     margin-right: 0;
 }
-/*quando passar por cima do mouse*/
 header nav a:hover{
     color: white;
     background-color: #E9DEF2;
@@ -88,7 +87,7 @@ section{
     border-radius: 57px;
     display: flex;
     justify-content: space-between;
-    /*align-items: center; */
+
     padding: 40px;
     margin-top: 550px;
 }
